@@ -15,6 +15,7 @@ vim.g.mapleader = " " -- the leader key is used in many keymaps,
 
 local plugins = {
     "nvim-lua/plenary.nvim",
+    "nvim-lualine/lualine.nvim",
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     {"nvim-telescope/telescope.nvim", tag = '0.1.6', 
         requires = { {"nvim-lua/plenary.nvim"}}},
