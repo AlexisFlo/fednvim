@@ -6,7 +6,7 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = {"rust", "rs", "Rust"},
   callback = function ()
     vim.schedule(function ()
-      vim.keymap.set("n", "<leader>rr", ":RustRun<CR>", {buffer = true})
+      vim.keymap.set("n", "<leader>rr", ":terminal cargo run<CR>", {buffer = true})
 	  --rustaceanvim remaps
 		--code actions
 		vim.keymap.set("n", "<leader>ca", function ()
